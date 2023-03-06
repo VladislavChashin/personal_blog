@@ -1,0 +1,36 @@
+.stories{
+    width: 100%;
+    padding-top: 60px;
+    .stories_content{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .stories_post{
+            max-width: 140px;
+            position: relative;
+            filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.2));
+            border-radius: 5px;
+            transition: .5s;
+            &:hover{
+                scale: 1.03;
+            }
+            .image{
+                display: flex;
+                justify-content: center;
+                img{
+                    text-align: center;
+                }
+            }
+            p{
+                position: absolute;
+                top: 165px;
+                left: 50px;
+                &:nth-child(1){
+                    position: absolute;
+                    left: 13px;
+                    top: 14px;
+                }
+            }
+        }
+    }
+}
